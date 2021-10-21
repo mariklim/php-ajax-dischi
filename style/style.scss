@@ -4,16 +4,18 @@
     margin: 0;
     padding: 0;
 }
-
 //common
 body{
-    background-color: rgb(31, 30, 42);
+    background-color: rgb(47, 46, 53);
 }
-
-//containers
+.container_centered{
+    width: 80%;
+    margin: auto;
+}
 
 
 //Header
+
 header{
     background-color: rgb(61, 60, 70);
 }
@@ -23,4 +25,41 @@ header .logo img{
 
 header .container {
     padding: .625rem 1.875rem;
+}
+
+//main
+main{
+    margin: 2.5rem 0;
+    h3{
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.25rem;
+        margin-bottom: .9375rem;
+    }
+    p{
+        color: rgb(148, 147, 147);
+    }
+}
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        text-align: center;
+        width: calc((100%/5) - 1.25rem);
+        background-color: rgb(61, 60, 70);
+        margin: .625rem;
+        padding: 1.25rem;
+        .card-img{
+            display: inline-block;
+            width: 12.5rem;
+            img{
+                width: 100%;
+            }
+        }
+        .card-description{
+            padding: 1.25rem 1.25rem 2.5rem 1.25rem;
+        }
+    }
 }

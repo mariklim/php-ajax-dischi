@@ -1,0 +1,19 @@
+{
+  "name": "php-ajax-dischi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariklim/php-ajax-dischi.git"
+  },
+  "author": "Maria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariklim/php-ajax-dischi/issues"
+  },
+  "homepage": "https://github.com/mariklim/php-ajax-dischi#readme"
+}
