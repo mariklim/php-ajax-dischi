@@ -1,0 +1,24 @@
+//reset
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//common
+body{
+    background-color: rgb(31, 30, 42);
+}
+
+
+//Header
+header{
+    background-color: rgb(61, 60, 70);
+}
+header .logo img{
+    width: 3.125rem;
+}
+
+header .container {
+    padding: .625rem 1.875rem;
+}
