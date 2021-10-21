@@ -34,9 +34,9 @@
                             <img src=<?php echo $data['poster'] ?> alt="<?php echo $data['title'] ?>">
                         </div>
                         <div class="card-description">
-                            <h3><?php echo $database[0]['title'] ?></h3>
-                            <p><?php echo $database[0]['author'] ?></p>
-                            <p><?php echo $database[0]['year'] ?></p>
+                            <h3><?php echo $data['title'] ?></h3>
+                            <p><?php echo $data['author'] ?></p>
+                            <p><?php echo $data['year'] ?></p>
                         </div>
                     </div>
                    <!--/ Album view HTML  -->
