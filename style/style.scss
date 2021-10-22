@@ -28,6 +28,28 @@ header .container {
     padding: .625rem 1.875rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    select
+   {
+        width: 12.5rem;
+        height: 2.5rem;
+        background-color:rgb(74, 73, 78);
+      
+     border: 1px solid transparent;
+        padding: 0 1.25rem;
+        color: rgb(255, 255, 255);
+        transition: all 0.7s;
+    }
+    select:hover{
+        color: white;
+        border:1px solid rgb(206, 204, 204);
+        background-color:rgb(56, 55, 59);
+    }
+    select:focus{
+        outline: none;
+    }
 }
 
 //main
@@ -44,6 +66,9 @@ main{
     }
     p.author{
         color: white;
+        font-size: 1.1875rem;
+        font-weight: 700;
+        margin-bottom: .625rem;
     }
     
 }
