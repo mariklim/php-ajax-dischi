@@ -16,7 +16,7 @@
 
     <!-- PHP -->
     <?php
-    include __DIR__ . "/partials/data.php";
+    require __DIR__ . "/partials/data.php";
     // var_dump($database);
     // phpinfo();
     ?>
@@ -46,16 +46,11 @@
 
                 <?php endforeach; ?>
                 <!-- /cycle PHP -->
+                
 
             </div>
         </div>
     </main>
-
-
-    <!-- JS, VUE.JS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script src="js/script.js"></script>
-    <!-- JS, VUE.JS -->
 </body>
 
 </html>

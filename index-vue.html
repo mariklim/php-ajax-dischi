@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Spotify VUE</title>
+</head>
+<body>
+    <section id="app">
+
+        <header>
+            <p>ciao</p>
+        </header>
+        <main>
+            <div class="container_centered">
+                <div class="cards" v-for ="(elm, index) in albums" :key="index">
+                        <div class="card">
+                            <div class="card-img">
+                                <img :src="elm.poster" :alt="elm.title">
+                            </div>
+                            <div class="card-description">
+                                <h3>{{elm.title}}</h3>
+                                <p>{{elm.author}}</p>
+                                <p>{{elm.genre}}</p>
+                                <p>{{elm.year}}</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    
+<!-- JS, VUE.JS -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/script.js"></script>
+<!-- JS, VUE.JS -->
+</body>
+</html>
