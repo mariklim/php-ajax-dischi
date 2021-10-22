@@ -11,18 +11,33 @@
     <section id="app">
 
         <header>
-            <p>ciao</p>
+            <div class="container">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+                <div class="nav">
+                    <select name="genre" v-model="select" @change="onChange($event)">
+                        <option value="">filtra per genere</option>
+                        <option value="Pop">pop</option>
+                        <option value="Rock">rock</option>
+                        <option value="Jazz">jazz</option>
+                        <option value="Metal">metal</option>
+                    </select>
+
+                    </select>
+                </div>
+            </div>
         </header>
         <main>
             <div class="container_centered">
-                <div class="cards" v-for ="(elm, index) in albums" :key="index">
-                        <div class="card">
+                <div class="cards" >
+                        <div class="card" v-for ="(elm, index) in albums" :key="index">
                             <div class="card-img">
                                 <img :src="elm.poster" :alt="elm.title">
                             </div>
                             <div class="card-description">
                                 <h3>{{elm.title}}</h3>
-                                <p>{{elm.author}}</p>
+                                <p class="author">{{elm.author}}</p>
                                 <p>{{elm.genre}}</p>
                                 <p>{{elm.year}}</p>
                             </div>

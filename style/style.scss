@@ -26,6 +26,8 @@ header .logo img{
 
 header .container {
     padding: .625rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 //main
@@ -40,6 +42,10 @@ main{
     p{
         color: rgb(148, 147, 147);
     }
+    p.author{
+        color: white;
+    }
+    
 }
 
 
