@@ -15,16 +15,7 @@ const app = new Vue({
         this.albums = response.data;
       })
 
-
-      //chiamo api per prendere info sui generi e li salvo in un array 
-      axios.get('http://localhost/api/index.php?'),{
-        params:{
-          genres:genres,
-        }
-      }
-      .then((response) => {
-        this.genres = response.data;
-      })
+    
 
   },
   methods: {

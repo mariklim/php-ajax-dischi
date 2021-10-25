@@ -9,6 +9,7 @@ if(!empty($_GET['genre'])){
     $genre = $_GET['genre'];
     //creo un ARR per album filtrati
     $dbFiltered = [];
+   
 
     //ciclo su file JSON
     foreach($database as $album){

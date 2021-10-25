@@ -16,8 +16,9 @@
                     <img src="../images/logo.png" alt="logo">
                 </div>
                 <div class="nav">
-                    <select name="genre" v-model="select" @change="onChange($event)">
+                    <select name="genres" v-model="select" @change="onChange($event)">
                         <option value="">filtra per genere</option>
+                        <!-- <option  v-for="(elm, index) in genres" :key="index" :value="elm">{{elm}}</option> -->
                         <option value="Pop">pop</option>
                         <option value="Rock">rock</option>
                         <option value="Jazz">jazz</option>
